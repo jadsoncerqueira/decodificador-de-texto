@@ -6,7 +6,7 @@
 body {
   width: min-content;
   height: 1024px;
-  margin: 50px auto;
+  margin: 40px auto;
   background-color: #f3f5fc;
 }
 
@@ -125,4 +125,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+header {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
