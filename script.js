@@ -19,6 +19,10 @@ const codificar = () => {
     element.classList.add("oculto");
   });
 
+  document.getElementById("btn3").classList.remove("oculto");
+
+  document.getElementById("out").classList.add("box-aut");
+
   document.getElementById("resultado").innerText = textoCodificado.join("");
 };
 
@@ -34,7 +38,26 @@ const decodificar = () => {
     element.classList.add("oculto");
   });
 
+  document.getElementById("btn3").classList.remove("oculto");
+
+  document.getElementById("out").classList.add("box-aut");
+
   document.getElementById("resultado").innerText = texto;
 };
+
+const copiar = () => {
+  let texto = document.getElementById("resultado").innerText;
+
+  const inputTemporario = document.createElement("input");
+  inputTemporario.value = texto;
+  document.body.appendChild(inputTemporario);
+
+  inputTemporario.select();
+  document.execCommand("copy");
+
+  document.body.removeChild(inputTemporario);
+};
+
+document.getElementById("btn3").addEventListener("click", copiar);
 document.getElementById("btn1").addEventListener("click", codificar);
 document.getElementById("btn2").addEventListener("click", decodificar);

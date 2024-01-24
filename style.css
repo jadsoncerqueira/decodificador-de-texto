@@ -24,16 +24,18 @@ body {
   flex-direction: column;
   padding-top: 168px;
   gap: 8px;
+  margin-bottom: 40px;
 }
 
 #dec textarea {
   height: 100%;
-  font-size: 32px;
+  font-size: 20px;
   font-family: "Inter";
-  line-height: 48px;
+  line-height: 30px;
   border: none;
   background-color: transparent;
   resize: none;
+  color: #0a3871;
 }
 
 #dec textarea::placeholder {
@@ -72,6 +74,7 @@ body {
   font-family: "Inter";
   font-size: 16px;
   line-height: 19.36px;
+  cursor: pointer;
 }
 
 .btn2 {
@@ -85,6 +88,22 @@ body {
   font-family: "Inter";
   font-size: 16px;
   line-height: 19.36px;
+  cursor: pointer;
+}
+
+#btn3 {
+  border: none;
+  border: 1px solid #0a3871;
+  background-color: #d8dfe8;
+  width: 336px;
+  height: 67px;
+  color: #0a3871;
+  border-radius: 24px;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 19.36px;
+  margin-bottom: 40px;
+  cursor: pointer;
 }
 
 #out {
@@ -96,6 +115,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.justyfy-center {
   justify-content: center;
 }
 
@@ -108,17 +130,34 @@ body {
   width: 336px;
   height: 58px;
   color: #343a40;
+  margin: 0 auto;
 }
 
-#out p {
+.div-resultado {
+  width: 336px;
+}
+
+.div-resultado p {
+  font-size: 15px;
+  font-family: "Inter";
+  line-height: 30px;
+  text-align: start;
+  font-weight: 100;
+  height: 48px;
+  margin-top: 40px;
+  color: #495057;
+}
+
+.paragrafo-tutorial {
   font-size: 16px;
   font-family: "Inter";
   line-height: 24px;
   text-align: center;
   font-weight: 100;
+  height: 16px;
   width: 336px;
-  height: 48px;
   color: #343a40;
+  color: #495057;
 }
 
 .infos {
@@ -136,4 +175,8 @@ header {
 
 .oculto {
   display: none;
+}
+
+.box-aut {
+  justify-content: space-between;
 }
