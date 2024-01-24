@@ -2,31 +2,34 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
     <title>Decodificador de texto</title>
   </head>
   <body>
-    <section id="dec">
-      <textarea
-        name=""
-        id=""
-        cols="30"
-        rows="10"
-        placeholder="Digite seu texto"
-      ></textarea>
-      <p>
-        <img src="./img/circle-fill.png" alt="" />
-        Apenas letras minúsculas e sem acento.
-      </p>
-      <div id="controls">
-        <button>Criptografar</button>
-        <button>Descriptografar</button>
-      </div>
-    </section>
-    <section id="out">
-      <img src="./img/garota.svg" alt="" />
-      <h2>Nenhuma mensagem encontrada</h2>
-      <p>Digite um texto que você deseja criptografar ou descriptografar</p>
-    </section>
+    <main id="area-principal">
+      <section id="dec">
+        <textarea name="" id="" placeholder="Digite seu texto"></textarea>
+        <p>
+          <img src="./img/circle-fill.png" alt="" />
+          Apenas letras minúsculas e sem acento.
+        </p>
+        <div id="controls">
+          <button class="btn1">Criptografar</button>
+          <button class="btn2">Descriptografar</button>
+        </div>
+      </section>
+      <section id="out">
+        <img src="./img/garota.svg" alt="" />
+        <div class="infos">
+          <h2>Nenhuma mensagem encontrada</h2>
+          <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
