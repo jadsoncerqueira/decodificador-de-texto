@@ -94,7 +94,7 @@ body {
 #btn3 {
   border: none;
   border: 1px solid #0a3871;
-  background-color: #d8dfe8;
+  background-color: #ffffff;
   width: 336px;
   height: 67px;
   color: #0a3871;
@@ -179,4 +179,111 @@ header {
 
 .box-aut {
   justify-content: space-between;
+}
+
+@media (max-width: 1340px) {
+  #area-principal {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #out {
+    width: 688px;
+    height: max-content;
+    /* border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    background-color: white;
+    display: flex;
+    flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0;
+  }
+
+  #out img {
+    display: none;
+  }
+
+  #out h2 {
+    font-weight: 700;
+    width: 700px;
+    height: 29px;
+  }
+
+  .paragrafo-tutorial {
+    height: 16px;
+    width: 700px;
+  }
+
+  #dec {
+    padding-top: 150px;
+  }
+
+  #dec textarea {
+    /* border: 1px solid red; */
+    height: 350px;
+  }
+
+  #btn3 {
+    width: 624px;
+    margin: 0;
+  }
+
+  .div-resultado {
+    width: 624px;
+  }
+
+  .div-resultado p {
+    margin-top: 0px;
+    height: min-content;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 880px) {
+  #area-principal {
+    gap: 0px;
+  }
+
+  #controls {
+    flex-direction: column;
+  }
+
+  #out {
+    width: 327px;
+    padding: 40px 0;
+    /* height: max-content; */
+    /* border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    background-color: white;
+    display: flex;
+    flex-direction: column; */
+    /* align-items: center;
+    justify-content: space-around;
+    padding: 40px 0; */
+  }
+
+  #btn3 {
+    width: 279px;
+  }
+
+  #out h2 {
+    font-weight: 700;
+    width: 263px;
+    height: 58px;
+  }
+
+  .paragrafo-tutorial {
+    height: 48px;
+    width: 263px;
+  }
+
+  header {
+    top: 24px;
+    left: -20px;
+  }
+
+  .div-resultado {
+    width: 279px;
+  }
 }

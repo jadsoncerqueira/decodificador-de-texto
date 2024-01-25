@@ -20,7 +20,7 @@ const codificar = () => {
   });
 
   document.getElementById("btn3").classList.remove("oculto");
-
+  document.querySelector(".div-resultado").classList.remove("oculto");
   document.getElementById("out").classList.add("box-aut");
 
   document.getElementById("resultado").innerText = textoCodificado.join("");
@@ -31,7 +31,10 @@ const decodificar = () => {
   const cifras = Object.values(libState);
 
   cifras.forEach((cifra) => {
-    texto = texto.replace(cifra, Object.keys(libState)[cifras.indexOf(cifra)]);
+    texto = texto.replaceAll(
+      cifra,
+      Object.keys(libState)[cifras.indexOf(cifra)]
+    );
   });
 
   Array.from(document.getElementsByClassName("grupo1")).forEach((element) => {
@@ -39,7 +42,7 @@ const decodificar = () => {
   });
 
   document.getElementById("btn3").classList.remove("oculto");
-
+  document.querySelector(".div-resultado").classList.remove("oculto");
   document.getElementById("out").classList.add("box-aut");
 
   document.getElementById("resultado").innerText = texto;
